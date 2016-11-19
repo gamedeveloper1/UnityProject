@@ -1,0 +1,31 @@
+using UnityEngine;
+using System.Collections;
+
+public class Script : MonoBehaviour
+{
+
+    private bool pause = false;
+
+    
+
+ void OnMouseDown() {
+            
+        
+ if (!pause)
+{
+
+ Time.timeScale = 0;
+ pause = true;
+
+}
+ else
+
+{
+ Time.timeScale = 1; 
+ pause = false;
+
+      }
+           
+   }
+
+}
